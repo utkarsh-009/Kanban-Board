@@ -2,52 +2,52 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: 'Rubik', sans-serif;                                                
+  font-family: 'Roboto', sans-serif;                                                
   list-style-type: none;
-}
-
-.header
-{
-  background: white;
-  height: 40px;
-}
-
-.body
-{
-  background: rgb(244,245,248);
-  height: 1000px;
+  background-color: #f9f9f9;
 }
 
 .app {
   text-align: left;
-  padding: 20px;
 }
 
 .ticket-card {
-  border: 1px solid #ddd;
-  padding: 10px;
+  border: 1px solid white;
+  padding: 0.5rem;
+  background: white;
   margin: 10px;
-  background-color: #f9f9f9;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tickets{
+  margin: 0 1rem;
+  justify-content:  space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 columns of equal width */
+  gap: 1rem;
+}
+
+.tasks {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .topBar {
-  height: 80px;
-  border: 2px solid red;
+  height: auto;
+  height: 100px;
+  background-color: white;
 }
 
 .topBar button{
   background-color: white;
-  padding: 0.2rem 0.6rem;
   border: 2px solid #f9f9f9;
   border-radius: 5px;
   font-size: 18px;
 }
 
+
+.kanbanBoard {
+  background: rgb(241,243,244);
+  height: auto;
+  font-size: 15px;
+}

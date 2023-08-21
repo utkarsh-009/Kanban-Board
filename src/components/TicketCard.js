@@ -5,10 +5,11 @@ const TicketCard = ({ ticket, users }) => {
 
   return (
     <div className="ticket-card">
-      <h3>{ticket.title}</h3>
-      <p>Status: {ticket.status}</p>
-      <p>Priority: {ticket.priority}</p>
-      <p>Assigned to: {user ? user.name : 'Unknown User'}</p>
+      <h5>{ticket.id}</h5>
+      <h4>{ticket.title}</h4>
+      <p>{ticket.tag}</p>
+      {/* <p>Priority: {ticket.priority}</p> */}
+      {/* <p>Assigned to: {user ? user.name : 'Unknown User'}</p> */}
     </div>
   );
 };
